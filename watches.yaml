@@ -1,0 +1,8 @@
+---
+- version: v1alpha1
+  group: cache.example.com
+  kind: Memcached
+  role: memcached
+  selector:
+    matchExpressions:
+     - {key: who2, operator: Exists, values: []} 
